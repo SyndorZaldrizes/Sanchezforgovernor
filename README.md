@@ -1,2 +1,51 @@
-# Sanchezforgovernor
-Campaign site for Nathan Sanchez Alvarado’s run for Governor of the Maryland Student Legislature. Built with GitHub Pages. Focused on clarity, governance structure, and measurable impact.
+# Sanchez for MSL Governor
+
+Campaign website for **Nathan Sanchez Alvarado**, candidate for Governor of the Maryland Student Legislature (MSL). Built as a static site hosted on GitHub Pages.
+
+## About the Candidate
+
+Nathan Sanchez Alvarado is a current President of the Maryland Student Legislature and a college student with hands-on experience in policy research and legislative engagement. He has worked directly with Maryland state delegates and senators, conducted research across education, AI, energy, and economic policy areas, and built civic-focused educational projects aimed at improving constitutional and legislative literacy among peers.
+
+## Platform Vision
+
+This campaign is centered on substantive, operational improvements to the Maryland Student Legislature — not symbolic gestures. The platform addresses:
+
+- **Education Reform** — Strengthening MSL's educational programming and chapter academic support
+- **Transparency & Integrity** — Publishing semesterly impact reports and enforcing clear governance standards
+- **First Responder Advocacy** — Supporting legislative awareness of first responder funding and policy
+- **Fiscal Responsibility** — Accountability in MSL budgeting and resource allocation
+- **Civic Literacy** — Expanding constitutional and legislative education through MSL chapters
+- **Mental Health Funding** — Advocating for increased access to mental health resources at the student government level
+
+## Site Structure
+
+```
+/
+├── index.html        # Home page — hero, about, experience, vision
+├── platform.html     # Full policy platform with detailed planks
+├── contact.html      # Contact form for inquiries and outreach
+└── README.md         # This file
+```
+
+## Technical Details
+
+- Pure HTML5 and CSS — no frameworks, no JavaScript dependencies
+- Semantic HTML structure with ARIA-accessible labels
+- Mobile-responsive layout via CSS Grid and viewport meta tags
+- Hosted via GitHub Pages (deploy from `main` branch)
+
+## Deployment
+
+1. Fork or clone this repository
+2. Enable GitHub Pages under **Settings → Pages → Deploy from branch: `main`**
+3. Site will be available at `https://<username>.github.io/Sanchezforgovernor/`
+
+No build step required. All files are static HTML/CSS.
+
+## Contact
+
+For press inquiries or campaign correspondence, use the contact form on the live site or reach out through the GitHub repository.
+
+---
+
+*Paid for by the Sanchez for MSL Governor Campaign. 2026.*
