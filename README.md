@@ -12,7 +12,7 @@ This campaign is focused on substantive, operational improvements to the Marylan
 
 - **Education Enhancements** - Strengthening MSL educational programming and chapter academic support
 - **Transparency and Integrity** - Publishing semesterly impact reports and enforcing clear governance standards
-- **Chapter Expansion & Support ** - Grow active MSL Membership by 25% in the next academic year including supporting resources for non active chapters
+- **Chapter Expansion & Support** - Grow active MSL Membership by 25% in the next academic year including supporting resources for non active chapters
 - **Fiscal Responsibility** - Accountability in MSL budgeting and resource allocation
 - **Civic Literacy** - Expanding constitutional and legislative education through MSL chapters and using MSL as a catalyst for engaged democracy 
 - **High School Outreach Initiative** - Establishing a pilot program to MSL strucutre and programming into High Schools, cultivating early civic literacy
