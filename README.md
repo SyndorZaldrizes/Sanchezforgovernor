@@ -4,19 +4,19 @@ Campaign website for **Nathan Sanchez Alvarado**, candidate for Governor of the 
 
 ## About the Candidate
 
-Nathan Sanchez Alvarado is President of the Maryland Student Legislature and a college student with direct experience in policy research and legislative engagement. He has worked with Maryland state delegates and senators, conducted research across education, AI, energy, and economic policy, and built civic-focused educational projects aimed at improving constitutional and legislative literacy among peers.
+Nathan Sanchez Alvarado is the Current DCP of the Maryland Student Legislature and a college student with direct experience in policy research and legislative engagement. He has worked with Maryland state delegates and senators, conducted research across education, AI, energy, and economic policy, and built civic-focused educational projects aimed at improving constitutional and legislative literacy among peers.
 
 ## Platform Vision
 
 This campaign is focused on substantive, operational improvements to the Maryland Student Legislature - not symbolic gestures. The platform addresses:
 
-- **Education Reform** - Strengthening MSL educational programming and chapter academic support
+- **Education Enhancements** - Strengthening MSL educational programming and chapter academic support
 - **Transparency and Integrity** - Publishing semesterly impact reports and enforcing clear governance standards
-- **First Responder Advocacy** - Supporting legislative awareness of first responder funding and policy
+- **Chapter Expansion & Support ** - Grow active MSL Membership by 25% in the next academic year including supporting resources for non active chapters
 - **Fiscal Responsibility** - Accountability in MSL budgeting and resource allocation
-- **Civic Literacy** - Expanding constitutional and legislative education through MSL chapters
-- **Mental Health Funding** - Advocating for increased student access to mental health resources
-
+- **Civic Literacy** - Expanding constitutional and legislative education through MSL chapters and using MSL as a catalyst for engaged democracy 
+- **High School Outreach Initiative** - Establishing a pilot program to MSL strucutre and programming into High Schools, cultivating early civic literacy
+  
 ## Site Structure
 
 ```
@@ -43,7 +43,7 @@ No build step required. All files are static HTML/CSS.
 
 ## Contact
 
-For press inquiries or campaign correspondence, use the contact form on the live site or reach out through the GitHub repository.
+For press inquiries or campaign correspondence, use the contact form on the live site or reach out through GroupME.
 
 ---
 
