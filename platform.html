@@ -1,322 +1,297 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Detailed policy platform for Nathan Sanchez Alvarado's campaign for Governor of the Maryland Student Legislature">
-  <title>Platform | Sanchez for MSL Governor</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Georgia, 'Times New Roman', serif;
-      background-color: #f5f5f5;
-      color: #111;
-      line-height: 1.7;
-    }
-
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-      letter-spacing: 0.02em;
-    }
-
-    nav {
-      background-color: #1a1a1a;
-      text-align: center;
-      padding: 14px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav a {
-      color: #e0e0e0;
-      text-decoration: none;
-      margin: 0 18px;
-      font-size: 0.95rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    nav a[aria-current="page"] {
-      color: #fff;
-      border-bottom: 2px solid #fff;
-    }
-
-    main {
-      max-width: 860px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .intro-text {
-      background: #fff;
-      padding: 30px;
-      margin: 40px 0;
-      border-left: 4px solid #111;
-      border-radius: 0 4px 4px 0;
-    }
-
-    .intro-text p {
-      margin: 0 0 12px;
-      font-size: 1.05rem;
-    }
-
-    .intro-text p:last-child {
-      margin: 0;
-    }
-
-    article {
-      margin-bottom: 60px;
-    }
-
-    article h2 {
-      font-size: 1.7rem;
-      border-bottom: 3px solid #111;
-      padding-bottom: 12px;
-      margin-bottom: 20px;
-      margin-top: 60px;
-    }
-
-    article h3 {
-      font-size: 1.2rem;
-      margin-top: 30px;
-      margin-bottom: 12px;
-      color: #222;
-    }
-
-    .policy-content {
-      background: #fff;
-      padding: 28px;
-      border-radius: 4px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-      margin-bottom: 20px;
-    }
-
-    .policy-content p {
-      margin: 0 0 14px;
-    }
-
-    .policy-content p:last-child {
-      margin: 0;
-    }
-
-    .policy-content ul {
-      margin: 12px 0;
-      padding-left: 22px;
-    }
-
-    .policy-content li {
-      margin-bottom: 8px;
-    }
-
-    .highlight {
-      font-weight: bold;
-      color: #111;
-    }
-
-    footer {
-      text-align: center;
-      padding: 36px 20px;
-      background-color: #111;
-      color: #aaa;
-      font-size: 0.85rem;
-      font-family: Arial, Helvetica, sans-serif;
-      margin-top: 80px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.7rem; }
-      nav a { margin: 0 10px; font-size: 0.85rem; }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Detailed policy platform for Nathan Sanchez Alvarado's campaign for Governor of the Maryland Student Legislature">
+    <title>Platform | Sanchez for MSL Governor</title>
+    <style>
+        *, *::before, *::after { box-sizing: border-box; }
+        body {
+            margin: 0;
+            font-family: Georgia, 'Times New Roman', serif;
+            background-color: #f5f5f5;
+            color: #111;
+            line-height: 1.7;
+        }
+        header {
+            background-color: #111;
+            color: #fff;
+            padding: 50px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 0.02em;
+        }
+        nav {
+            background-color: #1a1a1a;
+            text-align: center;
+            padding: 14px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        nav a {
+            color: #e0e0e0;
+            text-decoration: none;
+            margin: 0 18px;
+            font-size: 0.95rem;
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: 600;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+        }
+        nav a:hover,
+        nav a:focus {
+            color: #fff;
+            text-decoration: underline;
+        }
+        nav a[aria-current="page"] {
+            color: #fff;
+            border-bottom: 2px solid #fff;
+        }
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .intro-text {
+            background: #fff;
+            padding: 30px;
+            margin: 40px 0;
+            border-left: 4px solid #111;
+            border-radius: 0 4px 4px 0;
+        }
+        .intro-text p {
+            margin: 0 0 12px;
+            font-size: 1.05rem;
+        }
+        .intro-text p:last-child {
+            margin: 0;
+        }
+        article {
+            margin-bottom: 60px;
+        }
+        article h2 {
+            font-size: 1.7rem;
+            border-bottom: 3px solid #111;
+            padding-bottom: 12px;
+            margin-bottom: 20px;
+            margin-top: 60px;
+        }
+        article h3 {
+            font-size: 1.2rem;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            color: #222;
+        }
+        .policy-content {
+            background: #fff;
+            padding: 28px;
+            border-radius: 4px;
+            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
+            margin-bottom: 20px;
+        }
+        .policy-content p {
+            margin: 0 0 14px;
+        }
+        .policy-content p:last-child {
+            margin: 0;
+        }
+        .policy-content ul {
+            margin: 12px 0;
+            padding-left: 22px;
+        }
+        .policy-content li {
+            margin-bottom: 8px;
+        }
+        .highlight {
+            font-weight: bold;
+            color: #111;
+        }
+        footer {
+            text-align: center;
+            padding: 36px 20px;
+            background-color: #111;
+            color: #aaa;
+            font-size: 0.85rem;
+            font-family: Arial, Helvetica, sans-serif;
+            margin-top: 80px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.7rem; }
+            nav a { margin: 0 10px; font-size: 0.85rem; }
+        }
+    </style>
 </head>
 <body>
-
 <header role="banner">
-  <h1>Platform & Policy Priorities</h1>
+    <h1>Platform & Policy Priorities</h1>
 </header>
-
 <nav role="navigation" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="platform.html" aria-current="page">Platform</a>
-  <a href="contact.html">Contact</a>
+    <a href="index.html">Home</a>
+    <a href="platform.html" aria-current="page">Platform</a>
+    <a href="contact.html">Contact</a>
 </nav>
-
 <main id="main-content">
-
-  <div class="intro-text">
-    <p>This platform is built on the principle that student governance should be measured by the clarity of its commitments and the precision of its execution. The Maryland Student Legislature does not need empty rhetoric. It needs operational improvements tied to specific governance mechanisms and documented outcomes.</p>
-    <p>Each plank below outlines a clear problem, a structured solution, and the implementation pathway required to achieve it.</p>
-  </div>
-
-  <article>
-    <h2 id="education">1. Education Reform</h2>
-
-    <h3>Problem Statement</h3>
-    <div class="policy-content">
-      <p>MSL chapters currently lack structured academic support programming. While the organization nominally advances education policy, it does not systematically provide educational resources to its own membership or connect legislative discussions to substantive learning outcomes.</p>
+    <div class="intro-text">
+        <p>This platform is built on the principle that student governance should be measured by the clarity of its commitments and the precision of its execution. The Maryland Student Legislature does not need empty rhetoric. It needs operational improvements tied to specific governance mechanisms and documented outcomes.</p>
+        <p>Each plank below outlines the context of our current success, our targeted policy goals, a structured implementation pathway, and measurable outcomes for the organization.</p>
     </div>
 
-    <h3>Policy Goals</h3>
-    <div class="policy-content">
-      <ul>
-        <li>Establish a structured "Civic Education Series" across all chapters, focusing on Maryland state budget processes, committee structures, and legislative procedure.</li>
-        <li>Partner chapters with Maryland public schools to deliver workshops on constitutional literacy and model legislation.</li>
-        <li>Develop digital educational resources covering archived committee hearings, bill analysis templates, and budget breakdowns accessible to all MSL members.</li>
-        <li>Advocate within MSL for legislation that ties student government budgets to measurable academic support initiatives.</li>
-      </ul>
-    </div>
+    <article>
+        <!-- 1. Education Enhancements -->
+        <h2 id="education">1. Education Enhancements</h2>
+        <h3>Context and Opportunity</h3>
+        <div class="policy-content">
+            <p>The Maryland Student Legislature has long been a premier venue for civic education. We have an opportunity to build on this foundation by formalizing our educational programming to ensure every delegate, regardless of their major or experience level, has the tools to succeed in legislative drafting and substantive policy debate.</p>
+        </div>
+        <h3>Policy Goals</h3>
+        <div class="policy-content">
+            <ul>
+                <li>Standardize legislative drafting workshops across all active chapters to improve the technical quality of submitted bills.</li>
+                <li>Establish formal academic partnerships with Maryland university departments to align MSL participation with recognized learning outcomes.</li>
+                <li>Expand digital resources to include structured tutorials on parliamentary procedure and fiscal analysis.</li>
+            </ul>
+        </div>
+        <h3>Implementation Plan</h3>
+        <div class="policy-content">
+            <p><span class="highlight">Phase 1:</span> Assemble an Education Working Group to develop a standardized "Legislative Toolkit" for chapter use.</p>
+            <p><span class="highlight">Phase 2:</span> Roll out the toolkit to chapter presidents and faculty advisors during the fall leadership retreat.</p>
+            <p><span class="highlight">Governance:</span> Update the executive programming mandate through a board resolution to include semesterly training benchmarks.</p>
+        </div>
+        <h3>Measurable Outcomes</h3>
+        <div class="policy-content">
+            <p>Target a 30% reduction in technical bill drafting errors and a 15% increase in cross-disciplinary membership through academic department outreach.</p>
+        </div>
 
-    <h3>Implementation</h3>
-    <div class="policy-content">
-      <p><span class="highlight">Phase 1:</span> Launch pilot education programming at three chapters. Document outcomes and refine model.</p>
-      <p><span class="highlight">Phase 2:</span> Scale successful models statewide. Establish partnership agreements with Maryland school districts.</p>
-      <p><span class="highlight">Budget Requirement:</span> Minimal. Uses existing chapter meeting structures and volunteer coordination. Estimated cost: $500 for materials and web hosting.</p>
-    </div>
+        <!-- 2. Transparency & Integrity -->
+        <h2 id="transparency">2. Transparency & Integrity</h2>
+        <h3>Context and Opportunity</h3>
+        <div class="policy-content">
+            <p>Organizational integrity is the bedrock of our legitimacy. MSL already maintains high standards; our goal is to evolve these into a modernized, transparent reporting framework that makes our executive operations and chapter successes visible to every member.</p>
+        </div>
+        <h3>Policy Goals</h3>
+        <div class="policy-content">
+            <ul>
+                <li>Institutionalize the <span class="highlight">Semesterly MSL Impact Report</span> to document organizational progress and executive decisions.</li>
+                <li>Standardize governance practices across chapters through a digital reporting dashboard.</li>
+                <li>Enhance executive-to-chapter communication through monthly "Town Hall" updates on board initiatives.</li>
+            </ul>
+        </div>
+        <h3>Implementation Plan</h3>
+        <div class="policy-content">
+            <p><span class="highlight">Short-term:</span> Establish a standardized reporting template for all executive board members.</p>
+            <p><span class="highlight">Medium-term:</span> Implement a public-facing "Transparency Portal" on the MSL internal site for archived meeting minutes and reports.</p>
+            <p><span class="highlight">Governance:</span> Propose a bylaws amendment to codify the publication of Impact Reports as a permanent organizational requirement.</p>
+        </div>
+        <h3>Measurable Outcomes</h3>
+        <div class="policy-content">
+            <p>100% compliance with semesterly reporting deadlines and a documented increase in member engagement with executive board proceedings.</p>
+        </div>
 
-    <h2 id="transparency">2. Transparency and Integrity</h2>
+        <!-- 3. Chapter Expansion & Support -->
+        <h2 id="expansion">3. Chapter Expansion & Support</h2>
+        <h3>Context and Opportunity</h3>
+        <div class="policy-content">
+            <p>Growth is a sign of a healthy institution. By refining our support systems for existing chapters and creating clear pathways for new activations, we can ensure that MSL remains the leading voice for student advocacy in Maryland.</p>
+        </div>
+        <h3>Policy Goals</h3>
+        <div class="policy-content">
+            <ul>
+                <li>Increase active MSL membership by 25% through targeted recruitment and chapter reactivation strategies.</li>
+                <li>Develop a comprehensive "Officer Training Framework" to ensure leadership continuity within chapters.</li>
+                <li>Implement a proactive "Retention System" to identify and support struggling chapters before they become inactive.</li>
+            </ul>
+        </div>
+        <h3>Implementation Plan</h3>
+        <div class="policy-content">
+            <p><span class="highlight">Strategic Start:</span> Conduct a state-wide "Chapter Health Audit" to identify specific resource needs at each institution.</p>
+            <p><span class="highlight">Operational:</span> Deploy Executive Board liaisons to assist in "Activation Workshops" at targeted colleges and universities.</p>
+            <p><span class="highlight">Training:</span> Establish a mentorship program pairing experienced chapter presidents with newly elected officers.</p>
+        </div>
+        <h3>Measurable Outcomes</h3>
+        <div class="policy-content">
+            <p>Activation of at least two new or dormant chapters and a 25% net increase in statewide delegate registration.</p>
+        </div>
 
-    <h3>Problem Statement</h3>
-    <div class="policy-content">
-      <p>MSL operates without consistent reporting mechanisms. Members and external stakeholders have limited visibility into executive decisions, budget allocation, and chapter performance. This opacity undermines institutional legitimacy.</p>
-    </div>
+        <!-- 4. Fiscal Responsibility -->
+        <h2 id="fiscal">4. Fiscal Responsibility</h2>
+        <h3>Context and Opportunity</h3>
+        <div class="policy-content">
+            <p>Responsible stewardship of our resources allows us to fund the programming that matters most. We will build on current budgeting practices by introducing more granular reporting and exploring new avenues for revenue growth through strategic partnerships.</p>
+        </div>
+        <h3>Policy Goals</h3>
+        <div class="policy-content">
+            <ul>
+                <li>Implement disciplined budget analysis for all MSL programming to maximize cost-effectiveness.</li>
+                <li>Diversify revenue streams through a formal sponsorship and fundraising strategy.</li>
+                <li>Provide chapters with standardized financial reporting tools to ensure fiscal alignment across the organization.</li>
+            </ul>
+        </div>
+        <h3>Implementation Plan</h3>
+        <div class="policy-content">
+            <p><span class="highlight">Immediate:</span> Conduct a comprehensive review of all recurring organizational expenses to identify optimization opportunities.</p>
+            <p><span class="highlight">Growth:</span> Establish a "Development Subcommittee" tasked with securing institutional and community sponsorships.</p>
+            <p><span class="highlight">Reporting:</span> Transition to a digital ledger system that allows for real-time tracking of MSL budget status.</p>
+        </div>
+        <h3>Measurable Outcomes</h3>
+        <div class="policy-content">
+            <p>A 15% increase in non-dues revenue and a balanced budget with a documented reduction in administrative overhead.</p>
+        </div>
 
-    <h3>Policy Goals</h3>
-    <div class="policy-content">
-      <ul>
-        <li>Publish a <span class="highlight">semesterly MSL Impact Report</span> covering: active membership numbers, bills passed, budget expenditures by category, chapter activity summaries, and executive initiative outcomes.</li>
-        <li>Implement a public-facing dashboard tracking real-time chapter engagement metrics.</li>
-        <li>Establish a formal conflict-of-interest policy for MSL executive officers and committee chairs.</li>
-        <li>Require all MSL legislation to include a fiscal note detailing estimated implementation costs.</li>
-      </ul>
-    </div>
+        <!-- 5. Civic Engagement -->
+        <h2 id="civic">5. Civic Engagement</h2>
+        <h3>Context and Opportunity</h3>
+        <div class="policy-content">
+            <p>MSL is a catalyst for engaged democracy. We will strengthen the quality of our debate and our public outreach, ensuring that our legislative sessions serve as a high-impact platform for student-led civic discourse.</p>
+        </div>
+        <h3>Policy Goals</h3>
+        <div class="policy-content">
+            <ul>
+                <li>Enhance the technical quality of legislative debate through structured parliamentary training and guest speaker series.</li>
+                <li>Expand public outreach by formalizing MSL’s role in Maryland-wide civic literacy initiatives.</li>
+                <li>Create structured engagement opportunities for members to interact with state policymakers and advocacy groups.</li>
+            </ul>
+        </div>
+        <h3>Implementation Plan</h3>
+        <div class="policy-content">
+            <p><span class="highlight">Programming:</span> Integrate "Debate Mastery" modules into regular MSL sessions and chapter meetings.</p>
+            <p><span class="highlight">Partnership:</span> Coordinate with Maryland civic organizations to host joint forums on legislative priorities.</p>
+            <p><span class="highlight">Advocacy:</span> Establish an "External Relations" framework to bridge the gap between MSL resolutions and real-world policy discussions.</p>
+        </div>
+        <h3>Measurable Outcomes</h3>
+        <p>A documented improvement in debate quality metrics and a 20% increase in attendance at MSL-hosted public forums.</p>
+        </div>
 
-    <h3>Implementation</h3>
-    <div class="policy-content">
-      <p><span class="highlight">Immediate:</span> Draft and publish the first Impact Report covering the prior academic year. Establish template for future reports.</p>
-      <p><span class="highlight">Ongoing:</span> Assign a designated officer to maintain reporting cadence and dashboard updates.</p>
-      <p><span class="highlight">Governance:</span> Submit updated bylaws amendment requiring Impact Reports as a standing organizational practice.</p>
-    </div>
-
-    <h2 id="first-responders">3. First Responder Advocacy</h2>
-
-    <h3>Problem Statement</h3>
-    <div class="policy-content">
-      <p>Maryland's first responders face ongoing challenges related to funding, equipment, and mental health support. MSL has a platform to bring student voice to these issues but has not systematically done so.</p>
-    </div>
-
-    <h3>Policy Goals</h3>
-    <div class="policy-content">
-      <ul>
-        <li>Establish a dedicated <span class="highlight">First Responder Task Force</span> within MSL focused on researching policy gaps and drafting legislative proposals.</li>
-        <li>Advocate for increased state funding for volunteer fire departments and rural EMS services in Maryland's annual budget.</li>
-        <li>Support legislation expanding mental health resources for first responders, including mandatory counseling access and peer support programs.</li>
-        <li>Coordinate testimony from MSL members at relevant Maryland General Assembly committee hearings.</li>
-      </ul>
-    </div>
-
-    <h3>Implementation</h3>
-    <div class="policy-content">
-      <p><span class="highlight">Formation:</span> Recruit task force members from chapters with proximity to volunteer fire departments or EMS stations. Establish liaison relationships with Maryland State Firemen's Association.</p>
-      <p><span class="highlight">Legislative Cycle:</span> Draft model legislation during Fall semester for introduction in Spring MSL session. Simultaneously prepare testimony for Maryland General Assembly hearings on related bills.</p>
-    </div>
-
-    <h2 id="fiscal">4. Fiscal Responsibility</h2>
-
-    <h3>Problem Statement</h3>
-    <div class="policy-content">
-      <p>MSL chapters and the executive board allocate funds without consistent budget analysis or outcome tracking. Resources are spent reactively rather than strategically.</p>
-    </div>
-
-    <h3>Policy Goals</h3>
-    <div class="policy-content">
-      <ul>
-        <li>Require all MSL budget proposals to include a <span class="highlight">cost-benefit analysis</span> and projected outcomes.</li>
-        <li>Establish a standing Budget and Finance Committee responsible for reviewing all expenditure requests above $200.</li>
-        <li>Publish quarterly financial reports showing income sources, expenditures by category, and remaining balances.</li>
-        <li>Implement a zero-based budgeting approach where each budget cycle starts from zero and every line item must be justified.</li>
-      </ul>
-    </div>
-
-    <h3>Implementation</h3>
-    <div class="policy-content">
-      <p><span class="highlight">Structural:</span> Create Budget and Finance Committee via bylaws amendment. Appoint committee chair and establish meeting schedule.</p>
-      <p><span class="highlight">Process:</span> Develop standardized budget request form including cost-benefit fields. Train chapter treasurers on fiscal analysis methods.</p>
-      <p><span class="highlight">Accountability:</span> Tie future funding allocations to documented outcomes from prior expenditures.</p>
-    </div>
-
-    <h2 id="civic-literacy">5. Civic Literacy</h2>
-
-    <h3>Problem Statement</h3>
-    <div class="policy-content">
-      <p>Many students participate in MSL without foundational knowledge of how Maryland's government works. This limits the quality of legislative debate and the effectiveness of advocacy efforts.</p>
-    </div>
-
-    <h3>Policy Goals</h3>
-    <div class="policy-content">
-      <ul>
-        <li>Require all new MSL members to complete a <span class="highlight">Civic Foundations Module</span> covering Maryland's Constitution, General Assembly structure, committee system, and budget process.</li>
-        <li>Develop chapter-level programming focused on constitutional interpretation, legislative history, and precedent analysis.</li>
-        <li>Partner with Maryland civics education organizations to co-host public forums and educational events.</li>
-        <li>Build a repository of accessible educational materials available to all Maryland students, not just MSL members.</li>
-      </ul>
-    </div>
-
-    <h3>Implementation</h3>
-    <div class="policy-content">
-      <p><span class="highlight">Content Development:</span> Assemble working group to draft Civic Foundations Module. Pilot test with incoming chapter members.</p>
-      <p><span class="highlight">Partnerships:</span> Reach out to Maryland Center for Civic Education, League of Women Voters of Maryland, and Maryland State Archives for collaboration.</p>
-      <p><span class="highlight">Long-term:</span> Establish MSL as a recognized state resource for student civic education, expanding reach beyond current membership base.</p>
-    </div>
-
-    <h2 id="mental-health">6. Mental Health Funding</h2>
-
-    <h3>Problem Statement</h3>
-    <div class="policy-content">
-      <p>Maryland students face significant barriers to accessing mental health resources. MSL has not systematically prioritized mental health advocacy in its legislative agenda.</p>
-    </div>
-
-    <h3>Policy Goals</h3>
-    <div class="policy-content">
-      <ul>
-        <li>Advocate for increased funding for school-based mental health services in Maryland's annual education budget.</li>
-        <li>Support legislation requiring Maryland colleges and universities to maintain minimum counselor-to-student ratios.</li>
-        <li>Promote policies expanding telehealth access for student mental health services, particularly in rural areas.</li>
-        <li>Within MSL, establish peer support networks and mental health awareness programming at the chapter level.</li>
-      </ul>
-    </div>
-
-    <h3>Implementation</h3>
-    <div class="policy-content">
-      <p><span class="highlight">Legislative:</span> Draft MSL resolutions calling for specific budget increases tied to mental health counseling positions. Coordinate testimony at Maryland General Assembly budget hearings.</p>
-      <p><span class="highlight">Advocacy:</span> Partner with Maryland Coalition of Families and National Alliance on Mental Illness Maryland to amplify student voice in statewide mental health policy discussions.</p>
-      <p><span class="highlight">Internal:</span> Train chapter officers in mental health first aid. Establish referral protocols connecting MSL members to campus and community resources.</p>
-    </div>
-  </article>
-
+        <!-- 6. High School Outreach Initiative -->
+        <h2 id="outreach">6. High School Outreach Initiative</h2>
+        <h3>Context and Opportunity</h3>
+        <div class="policy-content">
+            <p>Preparing the next generation of MSL delegates begins in high school. We will establish a pilot outreach program that introduces Maryland high school students to the mechanics of student legislature, cultivating early civic literacy and a pipeline for future leadership.</p>
+        </div>
+        <h3>Policy Goals</h3>
+        <div class="policy-content">
+            <ul>
+                <li>Design and launch a pilot High School Outreach program integrated within the existing MSL chapter structure.</li>
+                <li>Define clear oversight responsibilities within the Executive Board for high school mentorship.</li>
+                <li>Develop a simplified "Civic Literacy Curriculum" tailored for high school model legislation workshops.</li>
+            </ul>
+        </div>
+        <h3>Implementation Plan</h3>
+        <div class="policy-content">
+            <p><span class="highlight">Pilot Phase:</span> Launch outreach partnerships with three Maryland high schools, led by nearby MSL college chapters.</p>
+            <p><span class="highlight">Resource Allocation:</span> Create a dedicated "Outreach Toolkit" containing simplified legislative templates and procedure guides.</p>
+            <p><span class="highlight">Evaluation:</span> Monitor student participation and knowledge retention through post-workshop assessments.</p>
+        </div>
+        <h3>Measurable Outcomes</h3>
+        <div class="policy-content">
+            <p>Participation from at least 150 high school students in the pilot year and a 10% conversion rate of outreach participants into MSL college delegates.</p>
+        </div>
+    </article>
 </main>
-
-<footer role="contentinfo">
-  © 2026 Sanchez for MSL Governor Campaign
-</footer>
-
+<footer role="contentinfo"> © 2026 Sanchez for MSL Governor Campaign</footer>
 </body>
 </html>
