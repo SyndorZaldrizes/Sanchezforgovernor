@@ -1,298 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Detailed policy platform for Nathan Sanchez Alvarado's campaign for Governor of the Maryland Student Legislature">
-    <title>Platform | Sanchez for MSL Governor</title>
-    <style>
-        *, *::before, *::after { box-sizing: border-box; }
-        body {
-            margin: 0;
-            font-family: Georgia, 'Times New Roman', serif;
-            background-color: #f5f5f5;
-            color: #111;
-            line-height: 1.7;
-        }
-        header {
-            background-color: #111;
-            color: #fff;
-            padding: 50px 20px;
-            text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.2rem;
-            letter-spacing: 0.02em;
-        }
-        nav {
-            background-color: #1a1a1a;
-            text-align: center;
-            padding: 14px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        nav a {
-            color: #e0e0e0;
-            text-decoration: none;
-            margin: 0 18px;
-            font-size: 0.95rem;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            text-transform: uppercase;
-        }
-        nav a:hover,
-        nav a:focus {
-            color: #fff;
-            text-decoration: underline;
-        }
-        nav a[aria-current="page"] {
-            color: #fff;
-            border-bottom: 2px solid #fff;
-        }
-        main {
-            max-width: 860px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        .intro-text {
-            background: #fff;
-            padding: 30px;
-            margin: 40px 0;
-            border-left: 4px solid #111;
-            border-radius: 0 4px 4px 0;
-        }
-        .intro-text p {
-            margin: 0 0 12px;
-            font-size: 1.05rem;
-        }
-        .intro-text p:last-child {
-            margin: 0;
-        }
-        article {
-            margin-bottom: 60px;
-        }
-        article h2 {
-            font-size: 1.7rem;
-            border-bottom: 3px solid #111;
-            padding-bottom: 12px;
-            margin-bottom: 20px;
-            margin-top: 60px;
-        }
-        article h3 {
-            font-size: 1.2rem;
-            margin-top: 30px;
-            margin-bottom: 12px;
-            color: #222;
-        }
-        .policy-content {
-            background: #fff;
-            padding: 28px;
-            border-radius: 4px;
-            box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-            margin-bottom: 20px;
-        }
-        .policy-content p {
-            margin: 0 0 14px;
-        }
-        .policy-content p:last-child {
-            margin: 0;
-        }
-        .policy-content ul {
-            margin: 12px 0;
-            padding-left: 22px;
-        }
-        .policy-content li {
-            margin-bottom: 8px;
-        }
-        .highlight {
-            font-weight: bold;
-            color: #111;
-        }
-        footer {
-            text-align: center;
-            padding: 36px 20px;
-            background-color: #111;
-            color: #aaa;
-            font-size: 0.85rem;
-            font-family: Arial, Helvetica, sans-serif;
-            margin-top: 80px;
-        }
-        @media (max-width: 600px) {
-            header h1 { font-size: 1.7rem; }
-            nav a { margin: 0 10px; font-size: 0.85rem; }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platform — Sanchez | Daramola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f1f3d; --red: #c0001f; --red-dark: #8a0016;
+      --cream: #f7f4ef; --warm-white: #fdfcfa;
+      --gray: #5a5a5a; --light-gray: #e8e4de; --gold: #b8960c;
+    }
+    body { font-family: 'Source Serif 4', Georgia, serif; background: var(--warm-white); color: var(--navy); font-size: 17px; line-height: 1.7; }
+
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); border-bottom: 3px solid var(--red); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-brand { font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.12em; color: var(--cream); text-transform: uppercase; }
+    .nav-brand span { color: var(--red); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul li a { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aab4c8; text-decoration: none; transition: color 0.2s; }
+    nav ul li a:hover, nav ul li a.active { color: var(--cream); }
+    nav ul li a.project { color: var(--gold); }
+    nav ul li a.project:hover { color: #e0b818; }
+
+    .page-header { background: var(--navy); padding: 3.5rem 2rem 3rem; border-bottom: 4px solid var(--red); }
+    .page-header .container { max-width: 860px; margin: 0 auto; }
+    .page-header .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.8rem; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--cream); line-height: 1.1; margin-bottom: 0.8rem; }
+
+    .owner-tabs { background: var(--cream); border-bottom: 2px solid var(--light-gray); padding: 0 2rem; display: flex; gap: 0; }
+    .owner-tab { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.12em; text-transform: uppercase; padding: 1rem 1.5rem; color: var(--gray); border-bottom: 3px solid transparent; margin-bottom: -2px; }
+    .owner-tab.nathan { border-bottom-color: var(--red); color: var(--red); }
+    .owner-tab.timi { border-bottom-color: var(--navy); color: var(--navy); }
+
+    section { padding: 3.5rem 2rem; }
+    .container { max-width: 860px; margin: 0 auto; }
+    .section-label { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.5rem; }
+    .section-label.timi-label { color: var(--navy); }
+    h2 { font-family: 'Playfair Display', serif; font-size: 1.9rem; font-weight: 700; color: var(--navy); margin-bottom: 1.5rem; }
+
+    .plank { border-left: 4px solid var(--red); padding: 1.5rem 1.5rem 1.2rem 2rem; margin-bottom: 2rem; background: var(--cream); }
+    .plank.timi-plank { border-left-color: var(--navy); }
+    .plank-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: 0.6rem; }
+    .plank-owner-tag { font-family: 'DM Mono', monospace; font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; background: var(--red); color: white; padding: 0.15rem 0.5rem; }
+    .plank.timi-plank .plank-owner-tag { background: var(--navy); }
+    .plank h3 { font-family: 'Playfair Display', serif; font-size: 1.25rem; font-weight: 700; color: var(--navy); margin-bottom: 0.6rem; }
+    .plank p { font-size: 0.95rem; color: #2a3a52; margin-bottom: 0.5rem; }
+    .plank ul { margin: 0.5rem 0 0 1.2rem; }
+    .plank ul li { font-size: 0.92rem; color: #2a3a52; margin-bottom: 0.3rem; }
+
+    .divider { border: none; border-top: 2px solid var(--light-gray); margin: 0.5rem 0 2.5rem; }
+
+    .p2030-callout { background: var(--navy); padding: 2rem 2.5rem; margin-top: 2rem; }
+    .p2030-callout .label { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); margin-bottom: 0.4rem; }
+    .p2030-callout p { color: #8090a8; font-style: italic; font-size: 0.95rem; margin-bottom: 1rem; }
+    .btn { display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; padding: 0.7rem 1.8rem; border: 1.5px solid; transition: all 0.2s; }
+    .btn-gold { background: transparent; color: var(--gold); border-color: var(--gold); }
+    .btn-gold:hover { background: var(--gold); color: var(--navy); }
+
+    footer { background: var(--navy); border-top: 3px solid var(--red); padding: 1.8rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.1em; color: #5a6880; margin: 0; }
+  </style>
 </head>
 <body>
-<header role="banner">
-    <h1>Platform & Policy Priorities</h1>
-</header>
-<nav role="navigation" aria-label="Main navigation">
-    <a href="index.html">Home</a>
-    <a href="platform.html" aria-current="page">Platform</a>
-    <a href="contact.html">Contact</a>
-</nav>
-<main id="main-content">
-    <div class="intro-text">
-        <p>This platform is built on the principle that student governance should be measured by the clarity of its commitments and the precision of its execution. The Maryland Student Legislature does not need empty rhetoric. It needs operational improvements tied to specific governance mechanisms and documented outcomes.</p>
-        <p>Each plank below outlines the context of our current success, our targeted policy goals, a structured implementation pathway, and measurable outcomes for the organization.</p>
+
+  <nav>
+    <div class="nav-brand"><span>Sanchez</span> | <span>Daramola</span> &nbsp;·&nbsp; MSL 2026</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="platform.html" class="active">Platform</a></li>
+      <li><a href="project2030.html" class="project">Project 2030</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Sanchez | Daramola · 2026</p>
+      <h1>The Platform</h1>
     </div>
+  </div>
 
-    <article>
-        <!-- 1. Education Enhancements -->
-        <h2 id="education">1. Education Enhancements</h2>
-        <h3>Context and Opportunity</h3>
-        <div class="policy-content">
-            <p>The Maryland Student Legislature has long been a premier venue for civic education. We have an opportunity to build on this foundation by formalizing our educational programming to ensure every delegate has the tools to succeed in legislative drafting and substantive policy debate.</p>
-        </div>
-        <h3>Policy Goals</h3>
-        <div class="policy-content">
-            <ul>
-                <li>Standardize legislative drafting workshops across all active chapters to improve the technical quality of submitted bills.</li>
-                <li>Establish formal academic partnerships with Maryland university departments to align MSL participation with recognized learning outcomes.</li>
-                <li>Expand digital resources to include structured tutorials on parliamentary procedure and fiscal analysis.</li>
-            </ul>
-        </div>
-        <h3>Implementation Plan</h3>
-        <div class="policy-content">
-            <p><span class="highlight">Phase 1:</span> Assemble an Education Working Group to develop a standardized "Legislative Toolkit" for chapter use.</p>
-            <p><span class="highlight">Phase 2:</span> Roll out the toolkit to chapter presidents and faculty advisors during the fall leadership retreat.</p>
-            <p><span class="highlight">Governance:</span> Update the executive programming mandate through a board resolution to include semesterly training benchmarks.</p>
-        </div>
-        <h3>Measurable Outcomes</h3>
-        <div class="policy-content">
-            <p>Target a 30% reduction in technical bill drafting errors and a 15% increase in cross-disciplinary membership through academic department outreach.</p>
-        </div>
+  <div class="owner-tabs">
+    <div class="owner-tab nathan">● Sanchez — Governor</div>
+    <div class="owner-tab timi">● Daramola — Lt. Governor</div>
+  </div>
 
-        <!-- 2. Transparency & Integrity -->
-        <h2 id="transparency">2. Transparency & Integrity</h2>
-        <h3>Context and Opportunity</h3>
-        <div class="policy-content">
-            <p>Organizational integrity is the bedrock of our legitimacy. MSL already maintains high standards; our goal is to evolve these into a modernized, transparent reporting framework that makes our executive operations and chapter successes visible to every member.</p>
-        </div>
-        <h3>Policy Goals</h3>
-        <div class="policy-content">
-            <ul>
-                <li>Institutionalize the <span class="highlight">Semesterly MSL Impact Report</span> to document organizational progress and executive decisions.</li>
-                <li>Standardize governance practices across chapters through a digital reporting dashboard.</li>
-                <li>Enhance executive-to-chapter communication through monthly updates on board initiatives.</li>
-            </ul>
-        </div>
-        <h3>Implementation Plan</h3>
-        <div class="policy-content">
-            <p><span class="highlight">Short-term:</span> Establish a standardized reporting template for all executive board members.</p>
-            <p><span class="highlight">Medium-term:</span> Implement a public-facing "Transparency Portal" on the MSL internal site for archived meeting minutes and reports.</p>
-            <p><span class="highlight">Governance:</span> Propose a bylaws amendment to codify the publication of Impact Reports as a permanent organizational requirement.</p>
-        </div>
-        <h3>Measurable Outcomes</h3>
-        <div class="policy-content">
-            <p>100% compliance with semesterly reporting deadlines and a documented increase in member engagement with executive board proceedings.</p>
-        </div>
+  <!-- ── SANCHEZ PLANKS ── -->
+  <section style="background: var(--warm-white);">
+    <div class="container">
+      <p class="section-label">Governor · Nathan Sanchez Alvarado</p>
+      <h2>Governance, Education &amp; Expansion</h2>
 
-        <!-- 3. Chapter Expansion & Support -->
-        <h2 id="expansion">3. Chapter Expansion & Support</h2>
-        <h3>Context and Opportunity</h3>
-        <div class="policy-content">
-            <p>Growth is a sign of a healthy institution. By refining our support systems for existing chapters and creating clear pathways for new activations, we can ensure that MSL remains the leading voice for student advocacy in Maryland.</p>
-        </div>
-        <h3>Policy Goals</h3>
-        <div class="policy-content">
-            <ul>
-                <li>Increase active MSL membership by 25% through targeted recruitment and chapter reactivation strategies.</li>
-                <li>Develop a comprehensive "Officer Training Framework" to ensure leadership continuity within chapters.</li>
-                <li>Implement a proactive "Retention System" to identify and support struggling chapters before they become inactive.</li>
-            </ul>
-        </div>
-        <h3>Implementation Plan</h3>
-        <div class="policy-content">
-            <p><span class="highlight">Strategic Start:</span> Conduct a state-wide "Chapter Health Audit" to identify specific resource needs at each institution.</p>
-            <p><span class="highlight">Operational:</span> Deploy Executive Board liaisons to assist in "Activation Workshops" at targeted colleges and universities.</p>
-            <p><span class="highlight">Training:</span> Establish a mentorship program pairing experienced chapter presidents with newly elected officers.</p>
-        </div>
-        <h3>Measurable Outcomes</h3>
-        <div class="policy-content">
-            <p>Activation of at least two new or dormant chapters and a 25% net increase in statewide delegate registration.</p>
-        </div>
+      <!-- 1. Education Infrastructure -->
+      <div class="plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Sanchez</span></div>
+        <h3>Education Infrastructure</h3>
+        <p>MSL's educational value has always been real — but it has been informal and uneven across campuses. The goal is to make it explicit, transferable, and credit-bearing so that every member can walk away with something legible and lasting.</p>
+        <ul>
+          <li>Develop and package a standardized credit course curriculum that any member institution can adopt through its political science or social sciences department</li>
+          <li>Build the curriculum around practical legislative skills: bill drafting, floor procedure, committee process, and policy analysis</li>
+          <li>Work with faculty advisors at member institutions to pursue academic credit recognition through each school's registrar</li>
+          <li>Pursue University System of Maryland recognition to make credit transferable across state institutions</li>
+        </ul>
+      </div>
 
-        <!-- 4. Fiscal Responsibility -->
-        <h2 id="fiscal">4. Fiscal Responsibility</h2>
-        <h3>Context and Opportunity</h3>
-        <div class="policy-content">
-            <p>Responsible stewardship of our resources allows us to fund the programming that matters most. We will build on current budgeting practices by introducing more granular reporting and exploring new avenues for revenue growth through strategic partnerships.</p>
-        </div>
-        <h3>Policy Goals</h3>
-        <div class="policy-content">
-            <ul>
-                <li>Implement disciplined budget analysis for all MSL programming to maximize cost-effectiveness.</li>
-                <li>Diversify revenue streams through a formal sponsorship and fundraising strategy.</li>
-                <li>Provide chapters with standardized financial reporting tools to ensure fiscal alignment across the organization.</li>
-            </ul>
-        </div>
-        <h3>Implementation Plan</h3>
-        <div class="policy-content">
-            <p><span class="highlight">Immediate:</span> Conduct a comprehensive review of all recurring organizational expenses to identify optimization opportunities.</p>
-            <p><span class="highlight">Growth:</span> Establish a "Development Subcommittee" tasked with securing institutional and community sponsorships.</p>
-            <p><span class="highlight">Reporting:</span> Transition to a digital ledger system that allows for real-time tracking of MSL budget status.</p>
-        </div>
-        <h3>Measurable Outcomes</h3>
-        <div class="policy-content">
-            <p>A 15% increase in non-dues revenue and a balanced budget with a documented reduction in administrative overhead.</p>
-        </div>
+      <!-- 2. Transparency & Governance -->
+      <div class="plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Sanchez</span></div>
+        <h3>Transparency &amp; Institutional Governance</h3>
+        <p>MSL's operations should be legible to its own members. That means regular reporting, clear governance standards, and a leadership structure that distributes responsibility rather than concentrating it in one office.</p>
+        <ul>
+          <li>Publish semesterly impact reports covering membership, legislation submitted, events held, and fiscal activity</li>
+          <li>Establish an appointed cabinet mirroring the Maryland Governor's office — Secretaries for Civic Education, Member Development, Digital Infrastructure, External Affairs, and Delegation Development</li>
+          <li>Annual State of MSL address delivered to the Council of State and Board of Directors</li>
+          <li>Leadership succession protocol ensuring incoming officers receive documented briefings and system access within two weeks of election</li>
+          <li>Annual review and public status update on all Project 2030 commitments</li>
+        </ul>
+      </div>
 
-        <!-- 5. Civic Engagement -->
-        <h2 id="civic">5. Civic Engagement</h2>
-        <h3>Context and Opportunity</h3>
-        <div class="policy-content">
-            <p>MSL is a catalyst for engaged democracy. We will strengthen the quality of our debate and our public outreach, ensuring that our legislative sessions serve as a high-impact platform for student-led civic discourse.</p>
-        </div>
-        <h3>Policy Goals</h3>
-        <div class="policy-content">
-            <ul>
-                <li>Enhance the technical quality of legislative debate through structured parliamentary training and guest speaker series.</li>
-                <li>Expand public outreach by formalizing MSL’s role in Maryland-wide civic literacy initiatives.</li>
-                <li>Create structured engagement opportunities for members to interact with state policymakers and advocacy groups.</li>
-            </ul>
-        </div>
-        <h3>Implementation Plan</h3>
-        <div class="policy-content">
-            <p><span class="highlight">Programming:</span> Integrate "Debate Mastery" modules into regular MSL sessions and chapter meetings.</p>
-            <p><span class="highlight">Partnership:</span> Coordinate with Maryland civic organizations to host joint forums on legislative priorities.</p>
-            <p><span class="highlight">Advocacy:</span> Establish an "External Relations" framework to bridge the gap between MSL resolutions and real-world policy discussions.</p>
-        </div>
-        <h3>Measurable Outcomes</h3>
-        <div class="policy-content">
-            <p>A documented improvement in debate quality metrics and a 20% increase in attendance at MSL-hosted public forums.</p>
-        </div>
+      <!-- 3. Chapter Expansion -->
+      <div class="plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Sanchez</span></div>
+        <h3>Chapter Expansion &amp; Delegation Development</h3>
+        <p>Maryland has more than 30 colleges without active MSL chapters. The infrastructure to activate them exists but what has been missing is a dedicated person and a systematic approach. This plank fixes that.</p>
+        <ul>
+          <li>Appoint a Secretary of Delegation Development to research and prioritize viable inactive campuses based on political science programs, student government infrastructure, and geographic distribution</li>
+          <li>Produce a Delegation Starter Kit: founding documents, a recruitment script, a sample first meeting agenda, and regional support contacts</li>
+          <li>Tie the credit course curriculum directly to delegation growth; campuses that adopt the course have a built-in recruitment and retention mechanism</li>
+          <li>Implement annual delegation health metrics tracking membership size, event attendance rate, bills submitted, and leadership continuity</li>
+          <li>Target: 250 students at Annual Session by 2030 - enough to seat both chambers, all committees, and all leadership roles simultaneously</li>
+        </ul>
+      </div>
 
-        <!-- 6. High School Outreach Initiative -->
-        <h2 id="outreach">6. High School Outreach Initiative</h2>
-        <h3>Context and Opportunity</h3>
-        <div class="policy-content">
-            <p>Preparing the next generation of MSL delegates begins in high school. We will establish a pilot outreach program that introduces Maryland high school students to the mechanics of student legislature, cultivating early civic literacy and a pipeline for future leadership.</p>
-        </div>
-        <h3>Policy Goals</h3>
-        <div class="policy-content">
-            <ul>
-                <li>Design and launch a pilot High School Outreach program integrated within the existing MSL chapter structure.</li>
-                <li>Define clear oversight responsibilities within the Executive Board for high school mentorship.</li>
-                <li>Develop a simplified "Civic Literacy Curriculum" tailored for high school model legislation workshops.</li>
-            </ul>
-        </div>
-        <h3>Implementation Plan</h3>
-        <div class="policy-content">
-            <p><span class="highlight">Pilot Phase:</span> Launch outreach partnerships with three Maryland high schools, led by nearby MSL college chapters.</p>
-            <p><span class="highlight">Resource Allocation:</span> Create a dedicated "Outreach Toolkit" containing simplified legislative templates and procedure guides.</p>
-            <p><span class="highlight">Evaluation:</span> Monitor student participation and knowledge retention through post-workshop assessments.</p>
-        </div>
-        <h3>Measurable Outcomes</h3>
-        <div class="policy-content">
-            <p>Participation from at least 150 high school students in the pilot year and a 10% conversion rate of outreach participants into MSL college delegates.</p>
-        </div>
-    </article>
-</main>
-<footer role="contentinfo"> © 2026 Sanchez for MSL Governor Campaign</footer>
+      <!-- 4. Fiscal Responsibility — reframed as fundraising -->
+      <div class="plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Sanchez</span></div>
+        <h3>Fundraising &amp; Financial Development</h3>
+        <p>MSL cannot grow its programming, reduce member fees, or invest in new resources without growing its revenue. This plank treats fundraising not as a one-time effort but as an ongoing organizational capability built at both the statewide and chapter level.</p>
+        <ul>
+          <li>Pursue at least one external grant application per fiscal year, targeting the Venable Foundation, Abell Foundation, Maryland Humanities Council, and similar Maryland-based funders</li>
+          <li>Develop a statewide events strategy that generates revenue while adding member value such mixers, speaker series, legislative receptions, and cross-campus competitions</li>
+          <li>Appoint a Financial Development Committee to assess how individual chapters currently raise funds, identify best practices, and produce a replicable fundraising playbook that any delegation can implement</li>
+          <li>Recognize that every chapter operates under different university finance rules, the committee's role is to understand those differences and provide tailored guidance, not a one-size-fits-all mandate</li>
+          <li>Direct increased revenue toward reducing event fees, funding delegation travel, and investing in shared digital infrastructure</li>
+        </ul>
+      </div>
+
+      <!-- 5. Civic Engagement & Town Halls -->
+      <div class="plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Sanchez</span></div>
+        <h3>Civic Engagement &amp; Town Halls</h3>
+        <p>MSL should be visible in the civic life of its member campuses and surrounding communities, not just at annual events. A structured town hall and civic engagement program puts MSL in direct conversation with students, faculty, and community members about the issues that matter to them.</p>
+        <ul>
+          <li>Establish a recurring town hall format that delegations can host on their own campuses. Structured public forums where MSL members facilitate discussion on local, state, and national policy issues</li>
+          <li>Train MSL members to serve as civic facilitators, not just legislators, running accessible public conversations that bring non-members into the process</li>
+          <li>Partner with student governments, academic departments, and community organizations to co-host events and expand reach beyond existing MSL membership</li>
+          <li>Use town halls as a recruitment pipeline, students who engage with MSL through a public event are more likely to join a delegation</li>
+          <li>Document and share town hall outcomes as part of the semesterly impact report</li>
+        </ul>
+      </div>
+
+      <hr class="divider">
+
+      <!-- ── DARAMOLA PLANKS ── -->
+      <p class="section-label timi-label">Lt. Governor · Timi Daramola</p>
+      <h2>Civic Education, Community &amp; Opportunity</h2>
+
+      <!-- 1. Community Engagement & Voter Drives (moved to first) -->
+      <div class="plank timi-plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Daramola</span></div>
+        <h3>Community Engagement &amp; Voter Drives</h3>
+        <p>MSL delegations should be active and visible in their own communities, not just at annual sessions. This means building frameworks that help delegations go beyond campus and make a tangible, measurable impact on civic participation where they live and study.</p>
+        <ul>
+          <li>Develop a community engagement toolkit that any delegation can deploy: templates, talking points, and event formats for local civic outreach</li>
+          <li>Launch a coordinated voter registration and voter drive program across all active MSL campuses, timed around election cycles at the local, state, and federal level</li>
+          <li>Train MSL members to run peer-to-peer voter outreach, equipping them with the skills to register fellow students, explain ballot issues, and facilitate informed participation</li>
+          <li>Partner with campus student governments and community organizations to amplify voter drive reach beyond MSL membership</li>
+          <li>Track and report voter registration numbers and drive participation as part of the annual civic impact report; making MSL's contribution to democratic participation visible and measurable</li>
+          <li>Create cross-campus programming that brings delegations together between sessions around shared civic goals</li>
+        </ul>
+      </div>
+
+      <!-- 2. Internship & Career Pipeline (moved to second) -->
+      <div class="plank timi-plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Daramola</span></div>
+        <h3>Internship &amp; Career Pipeline</h3>
+        <p>MSL members have access to legislative internships, policy fellowships, and civic leadership programs but that access is inconsistent and often depends on who you know. The goal is to systematize it so every member benefits, not just the connected ones.</p>
+        <ul>
+          <li>Build and maintain an internship tracker, a regularly updated database of legislative internship and policy fellowship opportunities refreshed every semester by a designated cabinet appointee</li>
+          <li>Develop resume and interview preparation resources tailored specifically to legislative and policy roles</li>
+          <li>Connect MSL alumni with current members for mentorship, referrals, and career guidance</li>
+          <li>Track and report placement outcomes annually so the pipeline's impact is documented and the program improves over time</li>
+          <li>Coordinate with the Secretary of External Affairs to build relationships with legislative offices, advocacy organizations, and policy institutions that recruit MSL members directly</li>
+        </ul>
+      </div>
+
+      <!-- 3. Expanding Civic Education Resources — add video series -->
+      <div class="plank timi-plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Daramola</span></div>
+        <h3>Expanding Civic Education Resources</h3>
+        <p>MSL's civic education resources are already strong. The challenge is distribution, accessibility, and format. Timi's focus is ensuring those resources reach every member at every school and adding new formats that meet students where they are.</p>
+        <ul>
+          <li>Centralize and expand MSL's civic education library from bill drafting guides, Parli Pro references, legislative research tools and make it accessible to all member institutions</li>
+          <li>Produce a short-form video series explaining key MSL and civic concepts: how to draft a bill, how floor debate works, what parliamentary procedure looks like in practice, how to read legislation, and more</li>
+          <li>Design videos to be shareable and platform-agnostic, usable in delegation meetings, LTI sessions, classrooms, and on social media for broader civic outreach</li>
+          <li>Ensure all deliverables are formatted for use at any campus, but keep each chapters unique flair.</li>
+          <li>Coordinate with the Secretary of Civic Education on statewide rollout and adoption tracking</li>
+        </ul>
+      </div>
+
+      <!-- 4. Recruitment Infrastructure -->
+      <div class="plank timi-plank">
+        <div class="plank-meta"><span class="plank-owner-tag">Daramola</span></div>
+        <h3>Recruitment Infrastructure</h3>
+        <p>Growing MSL requires more than enthusiasm. It requires systems and tools that delegations can use to recruit consistently, onboard new members effectively, and retain people across more than one semester.</p>
+        <ul>
+          <li>Build and maintain a recruitment resource hub for delegation leaders: templates, outreach scripts, social media toolkits, and event planning guides</li>
+          <li>Develop onboarding frameworks so new members understand MSL's structure, purpose, and expectations from day one</li>
+          <li>Create incentive structures that reward consistent participation: recognition, leadership pathways, and tangible benefits tied to engagement</li>
+          <li>Support inactive chapter reactivation with targeted outreach, starter resources, and direct contact from the Lt. Governor's office</li>
+          <li>Work alongside the Secretary of Delegation Development to ensure recruitment efforts align with the broader chapter expansion strategy</li>
+        </ul>
+      </div>
+
+      <!-- Strategic Framework callout -->
+      <div class="p2030-callout">
+        <div class="label">Strategic Framework</div>
+        <p>These platform commitments are structured within a five-year institutional plan. Project 2030 provides the milestones, timelines, and annual review requirements so this work continues beyond any single term.</p>
+        <a href="project2030.html" class="btn btn-gold">View Project 2030 →</a>
+      </div>
+
+    </div>
+  </section>
+
+  <footer>
+    <p>Paid for by the Sanchez | Daramola for MSL Governor Campaign &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Maryland Student Legislature</p>
+  </footer>
+
 </body>
 </html>

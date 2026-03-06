@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project 2030 — Sanchez | Daramola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f1f3d; --red: #c0001f; --cream: #f7f4ef;
+      --warm-white: #fdfcfa; --gray: #5a5a5a; --light-gray: #e8e4de; --gold: #b8960c;
+    }
+    html { scroll-behavior: smooth; }
+    body { font-family: 'Source Serif 4', Georgia, serif; background: var(--navy); color: var(--cream); min-height: 100vh; display: flex; flex-direction: column; }
+
+    nav { position: sticky; top: 0; z-index: 100; background: rgba(15,31,61,0.97); border-bottom: 3px solid var(--red); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; backdrop-filter: blur(8px); }
+    .nav-brand { font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.12em; color: var(--cream); text-transform: uppercase; }
+    .nav-brand span { color: var(--red); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul li a { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aab4c8; text-decoration: none; transition: color 0.2s; }
+    nav ul li a:hover { color: var(--cream); }
+    nav ul li a.active { color: var(--gold); }
+
+    main { flex: 1; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 5rem 2rem 4rem; text-align: center; position: relative; overflow: hidden; }
+
+    main::before { content: ''; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, transparent, transparent 39px, rgba(255,255,255,0.02) 39px, rgba(255,255,255,0.02) 40px); pointer-events: none; }
+
+    .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold); margin-bottom: 1.2rem; }
+
+    h1 { font-family: 'Playfair Display', Georgia, serif; font-size: clamp(3.5rem, 10vw, 7rem); font-weight: 900; line-height: 1; color: var(--cream); margin-bottom: 0.4rem; }
+
+    .subtitle { font-family: 'Playfair Display', serif; font-size: clamp(1rem, 3vw, 1.3rem); font-weight: 400; font-style: italic; color: #8090a8; margin-bottom: 2rem; }
+
+    .context-block { max-width: 580px; margin: 0 auto 2.5rem; }
+    .context-block p { font-size: 0.97rem; line-height: 1.75; color: #a0b0c8; margin-bottom: 0.8rem; }
+    .context-block p span { color: var(--cream); font-style: normal; }
+    .context-block p em { color: var(--gold); font-style: italic; }
+
+    .status-bar { display: flex; gap: 2.5rem; justify-content: center; flex-wrap: wrap; margin-bottom: 3rem; }
+    .status-item { text-align: center; }
+    .status-item .label { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: #5a6880; margin-bottom: 0.2rem; }
+    .status-item .value { font-family: 'DM Mono', monospace; font-size: 0.85rem; color: var(--gold); font-weight: 500; }
+
+    .pillars { display: flex; gap: 0.8rem; flex-wrap: wrap; justify-content: center; margin-bottom: 3rem; }
+    .pillar-tag { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid rgba(255,255,255,0.12); color: #8090a8; padding: 0.35rem 0.9rem; transition: all 0.2s; }
+    .pillar-tag:hover { border-color: var(--gold); color: var(--gold); }
+
+    .coming-soon-badge { display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold); border: 1.5px solid var(--gold); padding: 0.35rem 1rem; margin-bottom: 2rem; }
+
+    .divider-line { width: 60px; height: 2px; background: var(--red); margin: 0 auto 2.5rem; }
+
+    .btn { display: inline-block; font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; padding: 0.7rem 1.8rem; border: 1.5px solid; transition: all 0.2s; margin: 0.3rem; }
+    .btn-outline { background: transparent; color: var(--cream); border-color: rgba(255,255,255,0.2); }
+    .btn-outline:hover { border-color: var(--cream); }
+    .btn-gold { background: transparent; color: var(--gold); border-color: var(--gold); }
+    .btn-gold:hover { background: var(--gold); color: var(--navy); }
+
+    footer { background: rgba(0,0,0,0.3); border-top: 1px solid rgba(255,255,255,0.06); padding: 1.5rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; color: #3a4a60; margin: 0; }
+
+    @media (max-width: 600px) {
+      .status-bar { gap: 1.5rem; }
+      h1 { font-size: 3rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-brand"><span>Sanchez</span> | <span>Daramola</span> &nbsp;·&nbsp; MSL 2026</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="project2030.html" class="active">Project 2030</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <p class="eyebrow">Maryland Student Legislature · Strategic Plan</p>
+    <h1>Project 2030</h1>
+    <p class="subtitle">2026 – 2030 &nbsp;·&nbsp; Five Pillars &nbsp;·&nbsp; One Direction</p>
+
+    <div class="coming-soon-badge">Full Plan Coming Soon</div>
+
+    <div class="context-block">
+      <p>The <span>2020–2025 Five Year Plan</span> stabilized MSL through one of the hardest periods in the organization's history and the world. It set honest targets, reduced costs, and kept the foundation intact. That work matters and this plan builds directly on it.</p>
+      <p><em>Project 2030 is not a recovery plan. It's a growth plan.</em> A five-year institutional roadmap covering membership, civic education, digital infrastructure, governance, and statewide impact; written to outlast any single administration.</p>
+      <p>Every incoming Governor will be expected to review it, report on it, and revise it where reality demands. <span>That's what separates a plan from a promise.</span></p>
+    </div>
+
+    <div class="divider-line"></div>
+
+    <div class="status-bar">
+      <div class="status-item">
+        <div class="label">Horizon</div>
+        <div class="value">2026 – 2030</div>
+      </div>
+      <div class="status-item">
+        <div class="label">Pillars</div>
+        <div class="value">5</div>
+      </div>
+      <div class="status-item">
+        <div class="label">Membership Target</div>
+        <div class="value">250 at Annual Session</div>
+      </div>
+      <div class="status-item">
+        <div class="label">Campus Target</div>
+        <div class="value">30 Active Delegations</div>
+      </div>
+      <div class="status-item">
+        <div class="label">Status</div>
+        <div class="value">In Preparation</div>
+      </div>
+    </div>
+
+    <div class="pillars">
+      <div class="pillar-tag">I — Membership &amp; Growth</div>
+      <div class="pillar-tag">II — Civic Education</div>
+      <div class="pillar-tag">III — Digital Infrastructure</div>
+      <div class="pillar-tag">IV — Institutional Governance</div>
+      <div class="pillar-tag">V — Statewide Impact</div>
+    </div>
+
+    <a href="platform.html" class="btn btn-outline">← Back to Platform</a>
+    <a href="contact.html" class="btn btn-gold">Get in Touch</a>
+  </main>
+
+  <footer>
+    <p>Paid for by the Sanchez | Daramola for MSL Governor Campaign &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Maryland Student Legislature</p>
+  </footer>
+
+</body>
+</html>

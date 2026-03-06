@@ -1,226 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact the Sanchez for MSL Governor Campaign with inquiries, press requests, or volunteer interest.">
-  <title>Contact | Sanchez for MSL Governor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — Sanchez | Daramola</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Source+Serif+4:ital,wght@0,300;0,400;0,600;1,300&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
   <style>
-    *, *::before, *::after { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: Georgia, 'Times New Roman', serif;
-      background-color: #f5f5f5;
-      color: #111;
-      line-height: 1.7;
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --navy: #0f1f3d; --red: #c0001f; --cream: #f7f4ef;
+      --warm-white: #fdfcfa; --gray: #5a5a5a; --light-gray: #e8e4de; --gold: #b8960c;
     }
-
-    header {
-      background-color: #111;
-      color: #fff;
-      padding: 50px 20px;
-      text-align: center;
-    }
-
-    header h1 {
-      margin: 0;
-      font-size: 2.2rem;
-      letter-spacing: 0.02em;
-    }
-
-    nav {
-      background-color: #1a1a1a;
-      text-align: center;
-      padding: 14px 0;
-      position: sticky;
-      top: 0;
-      z-index: 100;
-    }
-
-    nav a {
-      color: #e0e0e0;
-      text-decoration: none;
-      margin: 0 18px;
-      font-size: 0.95rem;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: 600;
-      letter-spacing: 0.04em;
-      text-transform: uppercase;
-    }
-
-    nav a:hover,
-    nav a:focus {
-      color: #fff;
-      text-decoration: underline;
-    }
-
-    nav a[aria-current="page"] {
-      color: #fff;
-      border-bottom: 2px solid #fff;
-    }
-
-    main {
-      max-width: 700px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    section {
-      margin: 50px 0;
-    }
-
-    section h2 {
-      font-size: 1.6rem;
-      border-bottom: 2px solid #111;
-      padding-bottom: 10px;
-      margin-bottom: 20px;
-    }
-
-    section p {
-      margin: 0 0 16px;
-      font-size: 1.05rem;
-    }
-
-    .contact-form {
-      background: #fff;
-      padding: 32px;
-      border-radius: 4px;
-      box-shadow: 0 1px 4px rgba(0,0,0,0.07);
-    }
-
-    .form-group {
-      margin-bottom: 20px;
-    }
-
-    label {
-      display: block;
-      font-weight: bold;
-      margin-bottom: 6px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 0.95rem;
-    }
-
-    input[type="text"],
-    input[type="email"],
-    textarea,
-    select {
-      width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
-      border-radius: 3px;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 1rem;
-    }
-
-    textarea {
-      min-height: 140px;
-      resize: vertical;
-    }
-
-    button[type="submit"] {
-      background-color: #111;
-      color: #fff;
-      padding: 12px 28px;
-      border: none;
-      border-radius: 3px;
-      font-size: 1rem;
-      font-weight: bold;
-      cursor: pointer;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-
-    button[type="submit"]:hover,
-    button[type="submit"]:focus {
-      background-color: #333;
-    }
-
-    footer {
-      text-align: center;
-      padding: 36px 20px;
-      background-color: #111;
-      color: #aaa;
-      font-size: 0.85rem;
-      font-family: Arial, Helvetica, sans-serif;
-      margin-top: 80px;
-    }
-
-    @media (max-width: 600px) {
-      header h1 { font-size: 1.7rem; }
-      nav a { margin: 0 10px; font-size: 0.85rem; }
-    }
+    body { font-family: 'Source Serif 4', Georgia, serif; background: var(--warm-white); color: var(--navy); font-size: 17px; line-height: 1.7; }
+    nav { position: sticky; top: 0; z-index: 100; background: var(--navy); border-bottom: 3px solid var(--red); padding: 0 2rem; display: flex; align-items: center; justify-content: space-between; height: 56px; }
+    .nav-brand { font-family: 'DM Mono', monospace; font-size: 0.78rem; letter-spacing: 0.12em; color: var(--cream); text-transform: uppercase; }
+    .nav-brand span { color: var(--red); }
+    nav ul { list-style: none; display: flex; gap: 2rem; }
+    nav ul li a { font-family: 'DM Mono', monospace; font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aab4c8; text-decoration: none; transition: color 0.2s; }
+    nav ul li a:hover, nav ul li a.active { color: var(--cream); }
+    nav ul li a.project { color: var(--gold); }
+    .page-header { background: var(--navy); padding: 3.5rem 2rem 3rem; border-bottom: 4px solid var(--red); }
+    .page-header .container { max-width: 860px; margin: 0 auto; }
+    .page-header .eyebrow { font-family: 'DM Mono', monospace; font-size: 0.7rem; letter-spacing: 0.2em; text-transform: uppercase; color: var(--red); margin-bottom: 0.8rem; }
+    .page-header h1 { font-family: 'Playfair Display', serif; font-size: 2.8rem; font-weight: 900; color: var(--cream); line-height: 1.1; }
+    section { padding: 4rem 2rem; }
+    .container { max-width: 860px; margin: 0 auto; }
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 3rem; margin-top: 2rem; }
+    @media (max-width: 640px) { .contact-grid { grid-template-columns: 1fr; } }
+    .contact-card { border-left: 4px solid var(--red); padding-left: 1.5rem; }
+    .contact-card.lt { border-left-color: var(--navy); border-left-width: 4px; border-left-style: solid; }
+    .contact-card .role { font-family: 'DM Mono', monospace; font-size: 0.62rem; letter-spacing: 0.18em; text-transform: uppercase; color: var(--red); margin-bottom: 0.3rem; }
+    .contact-card.lt .role { color: var(--navy); }
+    .contact-card h3 { font-family: 'Playfair Display', serif; font-size: 1.3rem; font-weight: 700; color: var(--navy); margin-bottom: 0.2rem; }
+    .contact-card .school { font-family: 'DM Mono', monospace; font-size: 0.65rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--gray); margin-bottom: 0.8rem; }
+    .contact-card a { color: var(--red); text-decoration: none; font-size: 0.95rem; display: block; margin-bottom: 0.2rem; }
+    .contact-card.lt a { color: var(--navy); }
+    .contact-card a:hover { text-decoration: underline; }
+    .contact-card p { font-size: 0.9rem; color: var(--gray); margin-top: 0.5rem; }
+    footer { background: var(--navy); border-top: 3px solid var(--red); padding: 1.8rem 2rem; text-align: center; }
+    footer p { font-family: 'DM Mono', monospace; font-size: 0.68rem; letter-spacing: 0.1em; color: #5a6880; margin: 0; }
   </style>
 </head>
 <body>
-
-<header role="banner">
-  <h1>Contact the Campaign</h1>
-</header>
-
-<nav role="navigation" aria-label="Main navigation">
-  <a href="index.html">Home</a>
-  <a href="platform.html">Platform</a>
-  <a href="contact.html" aria-current="page">Contact</a>
-</nav>
-
-<main id="main-content">
-
-  <section>
-    <h2>Get in Touch</h2>
-    <p>Have a question about the campaign? Interested in volunteering? Looking for a 1 on 1? Fill out the form below and the campaign team will respond within 48 hours.</p>
-    <p>For urgent inquiries, include "URGENT" in the subject line.</p>
-  </section>
-
-  <div class="contact-form">
-    <form action="mailto:rsanchezalvarado@smcm.edu" method="post" enctype="text/plain">
-      
-      <div class="form-group">
-        <label for="name">Name *</label>
-        <input type="text" id="name" name="name" required aria-required="true">
-      </div>
-
-      <div class="form-group">
-        <label for="email">Email Address *</label>
-        <input type="email" id="email" name="email" required aria-required="true">
-      </div>
-
-      <div class="form-group">
-        <label for="subject">Subject *</label>
-        <input type="text" id="subject" name="subject" required aria-required="true">
-      </div>
-
-      <div class="form-group">
-        <label for="inquiry-type">Inquiry Type</label>
-        <select id="inquiry-type" name="inquiry-type">
-          <option value="general">General Question</option>
-          <option value="volunteer">Volunteer Interest</option>
-          <option value="press">1 on 1</option>
-          <option value="feedback">Feedback or Suggestion</option>
-          <option value="other">Other</option>
-        </select>
-      </div>
-
-      <div class="form-group">
-        <label for="message">Message *</label>
-        <textarea id="message" name="message" required aria-required="true"></textarea>
-      </div>
-
-      <button type="submit">Send Message</button>
-
-    </form>
+  <nav>
+    <div class="nav-brand"><span>Sanchez</span> | <span>Daramola</span> &nbsp;·&nbsp; MSL 2026</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="project2030.html" class="project">Project 2030</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+  </nav>
+  <div class="page-header">
+    <div class="container">
+      <p class="eyebrow">Sanchez | Daramola · 2026</p>
+      <h1>Get in Touch</h1>
+    </div>
   </div>
-
   <section>
-    <h2>Note on Form Submission</h2>
-    <p>This contact form uses a simple "mailto" fallback mechanism.</p>
-    <p>If the form does not open your email client, please send correspondence directly to the campaign team at rsanchezalvarado@smcm.edu.</p>
+    <div class="container">
+      <p style="color: var(--gray); font-style: italic; max-width: 520px; margin-bottom: 1rem;">Questions, suggestions, ideas for the platform - reach either of us directly. We mean it.</p>
+      <div class="contact-grid">
+        <div class="contact-card">
+          <div class="role">Governor · Candidate</div>
+          <h3>Nathan Sanchez Alvarado</h3>
+          <div class="school">St. Mary's College of Maryland</div>
+          <a href="https://www.instagram.com/nate.alvarado18" target="_blank">@nate.alvarado18</a>
+          <p>Reach out via Instagram or through the MSL network. Questions about platform, governance, or Project 2030 welcomed.</p>
+        </div>
+        <div class="contact-card lt">
+          <div class="role">Lt. Governor · Candidate</div>
+          <h3>Timi Daramola</h3>
+          <div class="school">Howard Community College</div>
+          <a href="mailto:oladaramola16@gmail.com">oladaramola16@gmail.com</a>
+          <p>Questions about civic education, recruitment, internship resources, or content creation support always welcomed.</p>
+        </div>
+      </div>
+    </div>
   </section>
-
-</main>
-
-<footer role="contentinfo">
-  © 2026 Sanchez for MSL Governor Campaign
-</footer>
-
+  <footer>
+    <p>Paid for by the Sanchez | Daramola for MSL Governor Campaign &nbsp;·&nbsp; 2026 &nbsp;·&nbsp; Maryland Student Legislature</p>
+  </footer>
 </body>
 </html>
